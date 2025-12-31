@@ -1,17 +1,21 @@
-
 # 🕯️ Ghost_Ops_Unit  
 ### Ghost_OS – Ghost Cyber Defence Operating System  
 **Sistema operativo effimero, modulare e rituale per cyber difesa legale.**
 
----
-
-## 🏷️ Badge di Progetto
+██████   ██████   ██████  ████████  ██████   ██████  
+██   ██ ██    ██ ██    ██    ██    ██    ██ ██    ██ 
+██████  ██    ██ ██    ██    ██    ██    ██ ██    ██ 
+██   ██ ██    ██ ██    ██    ██    ██    ██ ██    ██ 
+██████   ██████   ██████     ██     ██████   ██████  
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Platform](https://img.shields.io/badge/Platform-Termux%20%7C%20Linux-blue)
 ![Security](https://img.shields.io/badge/Security-Defensive%20Only-orange)
 ![License](https://img.shields.io/badge/License-Ethical%20Use-lightgrey)
 ![Build](https://img.shields.io/badge/Build-Ghost_OS%20Ritual-black)
+![Flipper](https://img.shields.io/badge/Flipper_Zero-Integrated-purple)
+![Logs](https://img.shields.io/badge/Logs-JSON-green)
+
 
 ---
 
@@ -248,3 +252,9 @@ https://highkali.github.io/Ghost_Ops_Unit/
 
 **HighKali**  
 Architetto rituale di sistemi effimeri e resilienti.
+
+## 🌐 GitHub Page
+
+https://highkali.github.io/Ghost_Ops_Unit/
+
+[![Website](https://img.shields.io/badge/Website-Ghost__OS-black)](https://highkali.github.io/Ghost_Ops_Unit/)
