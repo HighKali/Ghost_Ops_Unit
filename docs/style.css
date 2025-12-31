@@ -17,10 +17,6 @@ header h1 {
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
-header p {
-  margin-top: 10px;
-  color: #aaa;
-}
 nav {
   text-align: center;
   padding: 10px;
@@ -31,36 +27,17 @@ nav a {
   color: #66ccff;
   margin: 0 12px;
   text-decoration: none;
-  font-size: 0.95rem;
-}
-nav a:hover {
-  text-decoration: underline;
 }
 section {
   max-width: 900px;
   margin: 30px auto;
   padding: 0 20px 40px;
 }
-section h2 {
-  border-bottom: 1px solid #333;
-  padding-bottom: 5px;
-}
-section h3 {
-  margin-top: 25px;
-}
-code {
-  background: #111;
-  padding: 2px 4px;
-  border-radius: 3px;
-  font-family: "Fira Code", monospace;
-  font-size: 0.9rem;
-}
 pre {
   background: #111;
   padding: 12px;
   border-radius: 4px;
   overflow-x: auto;
-  font-size: 0.9rem;
 }
 footer {
   text-align: center;
