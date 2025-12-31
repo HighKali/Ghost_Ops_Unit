@@ -1,2 +1,6 @@
-# Ghost Whisper
-Modulo di notifiche (Telegram/Matrix/email) per heartbeat, anomalie e rituali.
+# whisper
+
+Modulo attivo di Ghost_OS.
+- heartbeat automatico
+- log automatico
+- entrypoint: module.py

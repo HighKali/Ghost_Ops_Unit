@@ -1,2 +1,6 @@
-# Ghost Integrity Guardian
-Monitor di integrità file, hash, ripristino e alert.
+# integrity_guardian
+
+Modulo attivo di Ghost_OS.
+- heartbeat automatico
+- log automatico
+- entrypoint: module.py

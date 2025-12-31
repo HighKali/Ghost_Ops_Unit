@@ -1,2 +1,6 @@
-# Ghost OS Mobile Companion
-Companion app/mobile per notifiche e stato Ghost_OS.
+# mobile_companion
+
+Modulo attivo di Ghost_OS.
+- heartbeat automatico
+- log automatico
+- entrypoint: module.py

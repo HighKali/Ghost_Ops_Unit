@@ -1,4 +1,4 @@
-# ritual_recorder
+# ghost_beacon_v2
 
 Modulo attivo di Ghost_OS.
 - heartbeat automatico

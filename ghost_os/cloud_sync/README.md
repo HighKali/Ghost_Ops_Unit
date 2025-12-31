@@ -1,2 +1,6 @@
-# Ghost Beacon Cloud Sync
-Sincronizzazione remota dei report Ghost Beacon verso endpoint/cloud.
+# cloud_sync
+
+Modulo attivo di Ghost_OS.
+- heartbeat automatico
+- log automatico
+- entrypoint: module.py
