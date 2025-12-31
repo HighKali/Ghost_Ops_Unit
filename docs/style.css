@@ -1,51 +1,78 @@
-/* ===== GHOST_OS DARK TEMUTO THEME ===== */
+/* ================================
+   GHOST_OS — 90s TECH FUSION THEME
+   Fluido • Tecnico • Retro-Futurista
+   ================================ */
 
+/* GLOBAL */
 body {
-  font-family: "Inter", system-ui, sans-serif;
-  background: #020204;
-  color: #d8d8d8;
+  font-family: "IBM Plex Mono", "Courier New", monospace;
+  background: #020302;
+  color: #c8f7d4;
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  text-shadow: 0 0 2px rgba(0,255,140,0.25);
+  background-image:
+    linear-gradient(rgba(0,255,140,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,255,140,0.03) 1px, transparent 1px);
+  background-size: 4px 4px;
+}
+
+/* CRT SCANLINES */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(0,255,140,0.03) 0px,
+    rgba(0,255,140,0.03) 1px,
+    transparent 2px,
+    transparent 3px
+  );
+  opacity: 0.25;
+  mix-blend-mode: overlay;
 }
 
 /* HEADER */
 header {
   text-align: center;
   padding: 60px 20px;
-  background: radial-gradient(circle at top, #1a1a1f 0%, #050508 70%);
-  border-bottom: 1px solid #222;
-  box-shadow: 0 0 40px rgba(0, 255, 255, 0.05);
+  background: linear-gradient(180deg, #041f0f 0%, #020302 80%);
+  border-bottom: 2px solid #0aff9d;
+  box-shadow: 0 0 20px rgba(0,255,140,0.2);
 }
 
 header h1 {
   margin: 0;
-  font-size: 2.8rem;
-  letter-spacing: 0.12em;
+  font-size: 3rem;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: #e6faff;
-  text-shadow: 0 0 12px rgba(0, 255, 255, 0.25);
+  color: #0aff9d;
+  text-shadow: 0 0 12px rgba(0,255,140,0.6);
 }
 
 header p {
   margin-top: 12px;
-  color: #8aaab3;
+  color: #7fffc8;
   font-size: 1.1rem;
 }
 
 /* NAVBAR */
 nav {
   text-align: center;
-  padding: 14px;
-  background: #0a0a0f;
-  border-bottom: 1px solid #111;
+  padding: 12px;
+  background: #031a10;
+  border-bottom: 1px solid #0aff9d;
   position: sticky;
   top: 0;
   z-index: 10;
+  box-shadow: 0 0 10px rgba(0,255,140,0.15);
 }
 
 nav a {
-  color: #66e0ff;
+  color: #0aff9d;
   margin: 0 14px;
   text-decoration: none;
   font-size: 0.95rem;
@@ -53,8 +80,8 @@ nav a {
 }
 
 nav a:hover {
-  color: #b3f4ff;
-  text-shadow: 0 0 8px rgba(102, 224, 255, 0.5);
+  color: #b3ffdf;
+  text-shadow: 0 0 8px rgba(0,255,140,0.6);
 }
 
 /* CONTENT */
@@ -65,41 +92,41 @@ section {
 }
 
 section h2 {
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #0aff9d;
   padding-bottom: 6px;
-  color: #e6faff;
-  text-shadow: 0 0 6px rgba(0, 255, 255, 0.15);
+  color: #0aff9d;
+  text-shadow: 0 0 6px rgba(0,255,140,0.4);
 }
 
 section h3 {
   margin-top: 30px;
-  color: #ccecff;
+  color: #7fffc8;
 }
 
 /* CODE BLOCKS */
 pre {
-  background: #0b0d11;
+  background: #031a10;
   padding: 16px;
-  border-radius: 6px;
+  border-radius: 4px;
   overflow-x: auto;
-  border: 1px solid #111;
-  box-shadow: 0 0 12px rgba(0, 255, 255, 0.05);
+  border: 1px solid #0aff9d;
+  box-shadow: 0 0 12px rgba(0,255,140,0.15);
 }
 
 code {
-  background: #111;
+  background: #041f0f;
   padding: 3px 6px;
   border-radius: 4px;
-  font-family: "Fira Code", monospace;
-  color: #9beaff;
+  color: #9bffd9;
 }
 
 /* FOOTER */
 footer {
   text-align: center;
   padding: 25px;
-  background: #050508;
-  border-top: 1px solid #111;
+  background: #020302;
+  border-top: 1px solid #0aff9d;
   font-size: 0.85rem;
-  color: #777;
+  color: #7fffc8;
+  text-shadow: 0 0 4px rgba(0,255,140,0.3);
 }
