@@ -1,4 +1,4 @@
-# ritual_recorder
+# showcase
 
 Modulo attivo di Ghost_OS.
 - heartbeat automatico

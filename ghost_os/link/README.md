@@ -1,2 +1,6 @@
-# Ghost Link
-Ponte BLE/USB tra Flipper Zero e Ghost_OS per streaming dati in tempo reale.
+# link
+
+Modulo attivo di Ghost_OS.
+- heartbeat automatico
+- log automatico
+- entrypoint: module.py

@@ -1,2 +1,6 @@
-# Ghost Ritual Archive
-Archivio simbolico/narrativo dei log e delle missioni.
+# archive
+
+Modulo attivo di Ghost_OS.
+- heartbeat automatico
+- log automatico
+- entrypoint: module.py

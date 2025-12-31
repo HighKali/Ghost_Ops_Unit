@@ -1,2 +1,6 @@
-# Ghost OS Installer
-Installer one-shot per Termux/Linux/WSL.
+# installer
+
+Modulo attivo di Ghost_OS.
+- heartbeat automatico
+- log automatico
+- entrypoint: module.py
