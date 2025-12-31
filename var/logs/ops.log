@@ -1,0 +1,2 @@
+{"ts": "2025-12-31T17:22:34.343674Z", "channel": "ops", "msg": "ghost_selfheal completed"}
+{"ts": "2025-12-31T17:22:34.431538Z", "channel": "ops", "msg": "ghost_doctor REPORT=/data/data/com.termux/files/home/Ghost_Ops_Unit/var/state/ghost_doctor_20251231_182234.txt"}
