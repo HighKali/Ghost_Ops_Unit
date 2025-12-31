@@ -23,7 +23,45 @@
 </nav>
 
 <section>
-<h2>Modules</h2><p>Core, Ops, Missions, Rituals, Var.</p>
+<h2>Modules</h2>
+<pre>
+$ ls modules/
+> core/
+> ops/
+> missions/
+> rituals/
+> var/
+
+$ core/
+> Gestisce integrità, heartbeat, logging, bus interno.
+> È il nucleo vitale del sistema.
+
+$ ops/
+> ghost_doctor     → diagnosi e riparazione
+> ghost_selfheal   → auto‑rigenerazione
+> ghost_push       → sincronizzazione remota
+> ghost_status     → stato del sistema
+> ghost_summary    → riepilogo rituale
+
+$ missions/
+> Moduli operativi attivabili su richiesta:
+>   - network_scan
+>   - wifi_guardian
+>   - flipper_sync
+>   - flipper_analyze
+>   - flipper_guardian
+>   - system_sweep
+
+$ rituals/
+> init_ritual      → avvio del sistema
+> closure_ritual   → chiusura e purificazione
+> purge_ritual     → rimozione stato effimero
+
+$ var/
+> Stato temporaneo, logs JSON, cache effimera.
+> Nulla è permanente. Tutto è ciclico.
+</pre>
+
 </section>
 
 <footer>

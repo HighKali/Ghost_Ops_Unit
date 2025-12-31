@@ -2,7 +2,7 @@
 <html lang="it">
 <head>
 <meta charset="UTF-8">
-<title>Install – Ghost_OS</title>
+<title>Installazione – Ghost_OS</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -23,7 +23,29 @@
 </nav>
 
 <section>
-<h2>Installazione</h2><p>Termux e Linux supportati.</p>
+<h2>Installazione</h2>
+<pre>
+$ platform
+> Termux, Linux, WSL, Android (via Termux)
+
+$ install termux
+pkg update
+pkg install git python bash coreutils
+git clone https://github.com/HighKali/Ghost_Ops_Unit.git
+cd Ghost_Ops_Unit
+bash ghostos_autoload.sh
+
+$ install linux
+sudo apt update
+sudo apt install git python3 bash coreutils
+git clone https://github.com/HighKali/Ghost_Ops_Unit.git
+cd Ghost_Ops_Unit
+bash ghostos_autoload.sh
+
+$ first_run
+ghost
+</pre>
+
 </section>
 
 <footer>
