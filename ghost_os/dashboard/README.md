@@ -1,2 +1,10 @@
 # Ghost Dashboard Live
-Pannello web per heartbeat, logs, anomalie, moduli e profili (DEV/LAB/FIELD).
+
+Dashboard CRT per Ghost_OS:
+- heartbeat
+- logs
+- anomalie
+- stato moduli
+- profili attivi
+
+Versione 0.1 — struttura iniziale.
