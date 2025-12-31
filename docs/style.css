@@ -3,7 +3,6 @@
    Fluido • Tecnico • Retro-Futurista
    ================================ */
 
-/* GLOBAL */
 body {
   font-family: "IBM Plex Mono", "Courier New", monospace;
   background: #020302;
@@ -18,7 +17,7 @@ body {
   background-size: 4px 4px;
 }
 
-/* CRT SCANLINES */
+/* CRT scanlines */
 body::after {
   content: "";
   position: fixed;
@@ -35,7 +34,7 @@ body::after {
   mix-blend-mode: overlay;
 }
 
-/* HEADER */
+/* Header */
 header {
   text-align: center;
   padding: 60px 20px;
@@ -59,7 +58,7 @@ header p {
   font-size: 1.1rem;
 }
 
-/* NAVBAR */
+/* Navbar */
 nav {
   text-align: center;
   padding: 12px;
@@ -84,7 +83,7 @@ nav a:hover {
   text-shadow: 0 0 8px rgba(0,255,140,0.6);
 }
 
-/* CONTENT */
+/* Content */
 section {
   max-width: 900px;
   margin: 40px auto;
@@ -103,7 +102,7 @@ section h3 {
   color: #7fffc8;
 }
 
-/* CODE BLOCKS */
+/* Code blocks */
 pre {
   background: #031a10;
   padding: 16px;
@@ -120,7 +119,7 @@ code {
   color: #9bffd9;
 }
 
-/* FOOTER */
+/* Footer */
 footer {
   text-align: center;
   padding: 25px;
