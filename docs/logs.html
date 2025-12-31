@@ -5,10 +5,10 @@
 <title>Logs – Ghost_OS</title>
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="crt">
 
 <header>
-  <h1>Ghost_OS</h1>
+  <h1 class="glitch" data-text="Ghost_OS">Ghost_OS</h1>
   <p>Rituale • Effimero • Difensivo</p>
 </header>
 
@@ -23,21 +23,10 @@
 </nav>
 
 <section>
-<h2>Logs</h2>
+<h2>Logs <span class='cursor'></span></h2>
 <pre>
-$ tail -f ghost.log.json
-> {
->   "timestamp": "2025-01-01T12:00:00Z",
->   "module": "core",
->   "event": "heartbeat",
->   "status": "ok"
-> }
-
-$ description
-> Logging JSON effimero, strutturato, anonimo.
-
-$ purpose
-> I log non sono un archivio. Sono un battito.
+<span class='terminal-line'>$ tail -f ghost.log.json</span>
+<span class='terminal-line'>{ "event": "heartbeat", "status": "ok" }</span>
 </pre>
 
 </section>
@@ -45,6 +34,8 @@ $ purpose
 <footer>
 <p>© Ghost_OS – HighKali</p>
 </footer>
+
+<div id="noise"></div>
 
 </body>
 </html>
