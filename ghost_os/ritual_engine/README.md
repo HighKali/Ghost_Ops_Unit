@@ -1,2 +1,9 @@
 # Ghost Ritual Engine v2
-Motore di missioni dinamiche basate su condizioni, eventi e stato del sistema.
+
+Il motore rituale di Ghost_OS:
+- osserva eventi e log
+- applica regole
+- genera rituali
+- esegue azioni automatiche
+
+Versione 0.1 — struttura iniziale.
