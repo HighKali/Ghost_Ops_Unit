@@ -1,37 +1,21 @@
-# 🜁 Ghost_OS  
-Sistema operativo rituale di cyber-difesa etica, modulare, auto-rigenerante e integrato con Flipper Zero.
+# Ghost_Ops_Unit — Ghost Orbit System
 
----
+Questa repo contiene:
 
-## 🚀 Bootable USB Ready  
-![Bootable USB Ready](https://img.shields.io/badge/Bootable-USB%20Ready-brightgreen)
+- **Ghost Onion Node** → nodo centrale (Tor-only, concettuale)
+- **Ghost Orbit Client** → satellite mobile (Android/Linux)
+- **Ghost Peripheral** → sensori (es. Flipper Zero, in modalità passiva)
+- **Ghost Orbit Engine** → motore di orchestrazione
+- **Ghost Rituals** → rituali difensivi e simbolici
+- **Ghost Dashboard** → vista HTML (scheletro)
+- **Ghost Superguardian** → protezione della repo
 
-Ghost_OS può essere scritto su USB tramite:
+Tutto è progettato in modo:
 
-- Rufus  
-- balenaEtcher  
-- UNetbootin  
+- difensivo  
+- etico  
+- non intrusivo  
+- orientato a Tor/onion come modello di privacy  
 
-L’immagine viene generata automaticamente ad ogni commit.
-
-👉 **Download ufficiale:**  
-https://highkali.github.io/Ghost_Ops_Unit/download.html
-
----
-
-## 📦 Struttura della Distro
-
-- **core/** — motori vitali  
-- **ops/** — automazioni operative  
-- **rituals/** — liturgia tecnica  
-- **missions/** — azioni contestuali  
-- **ghost_os/** — moduli attivi  
-- **bootable/** — generatore immagine USB  
-- **docs/** — sito ufficiale  
-
----
-
-## 🔥 Creazione immagine USB
-
-Ghost_OS include uno script che genera l’immagine:
-
+Questa è una **versione scheletro viva**:  
+la struttura è completa, i moduli sono presenti, pronti per essere riempiti e potenziati.

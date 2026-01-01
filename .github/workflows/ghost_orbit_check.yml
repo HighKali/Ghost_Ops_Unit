@@ -1,0 +1,39 @@
+name: Ghost Orbit System — Basic Check
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  basic-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: List tree
+        run: |
+          echo "=== Repo tree ==="
+          ls -R
+
+      - name: Check core directories
+        run: |
+          for d in ghost_onion_node ghost_orbit_client ghost_peripheral ghost_orbit_engine ghost_rituals ghost_dashboard ghost_superguardian; do
+            if [ ! -d "$d" ]; then
+              echo "Missing directory: $d"
+              exit 1
+            else
+              echo "Found: $d"
+            fi
+          done
+
+      - name: Check main scripts exist
+        run: |
+          for f in ghost_orbit_bootstrap.sh ghost_orbit_compile_all.sh ghost_orbit_demo_ritual.sh; do
+            if [ ! -f "$f" ]; then
+              echo "Missing script: $f"
+              exit 1
+            else
+              echo "Found: $f"
+            fi
+          done
