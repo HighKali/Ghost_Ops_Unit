@@ -1,0 +1,18 @@
+# Runtime
+var/logs/
+var/heartbeat/
+var/state/
+ghost_os/ritual_engine/__pycache__/
+
+# Bootable artifacts
+bootable/rootfs/
+bootable/rootfs.tar.gz
+bootable/ghost_os.img
+build_image/
+
+# Python cache
+__pycache__/
+
+# SSH accidental files
+eval "$(ssh-agent -s)"
+eval "$(ssh-agent -s)".pub
