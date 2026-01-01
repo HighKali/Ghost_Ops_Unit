@@ -1,14 +1,3 @@
-#!/usr/bin/env bash
-set -e
-
-echo "[GHOST] Attivazione totale in corso..."
-
-###############################################
-# 1. CREAZIONE PAGINA DI DOWNLOAD
-###############################################
-mkdir -p docs
-
-cat > docs/download.html << 'EOF'
 <!DOCTYPE html>
 <html>
 <head>
@@ -60,29 +49,3 @@ cat > docs/download.html << 'EOF'
 
 </body>
 </html>
-EOF
-
-echo "[GHOST] Pagina download creata."
-
-
-###############################################
-# 2. README AGGIORNATO + BADGE
-###############################################
-cat > README.md << 'EOF'
-# 🜁 Ghost_OS  
-Sistema operativo rituale di cyber-difesa etica, modulare, auto-rigenerante e integrato con Flipper Zero.
-
----
-
-## 🚀 Bootable USB Ready  
-![Bootable USB Ready](https://img.shields.io/badge/Bootable-USB%20Ready-brightgreen)
-
-👉 **Download ufficiale:**  
-https://highkali.github.io/Ghost_Ops_Unit/download.html
-
----
-
-## 🔥 Creazione immagine USB
-
-Ghost_OS include uno script che genera l’immagine:
-

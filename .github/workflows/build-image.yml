@@ -1,0 +1,28 @@
+name: Build Ghost_OS Image
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build-image:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v3
+
+    - name: Install tools
+      run: |
+        sudo apt update
+        sudo apt install -y e2fsprogs
+
+    - name: Generate image
+      run: |
+        bash bootable/create_image.sh
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: ghost_os.img
+        path: bootable/ghost_os.img
