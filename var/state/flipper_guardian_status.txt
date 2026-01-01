@@ -1,3 +1,0 @@
-=== FLIPPER GUARDIAN STATUS ===
-Wed Dec 31 18:09:33 CET 2025
-[!] Flipper non rilevato o percorso non valido.

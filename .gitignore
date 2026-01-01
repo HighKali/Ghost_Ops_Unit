@@ -1,18 +1,38 @@
-# Runtime
+# ============================
+# Runtime (mai su GitHub)
+# ============================
 var/logs/
 var/heartbeat/
 var/state/
 ghost_os/ritual_engine/__pycache__/
 
-# Bootable artifacts
+# ============================
+# Bootable artifacts (pesanti)
+# ============================
 bootable/rootfs/
 bootable/rootfs.tar.gz
 bootable/ghost_os.img
+ghost_os.img
+rootfs/
+rootfs.tar.gz
 build_image/
 
+# ============================
 # Python cache
+# ============================
 __pycache__/
+*/__pycache__/
 
+# ============================
 # SSH accidental files
-eval "$(ssh-agent -s)"
-eval "$(ssh-agent -s)".pub
+# ============================
+ssh-agent.env
+ssh-agent.env.pub
+
+# ============================
+# Editor / OS junk
+# ============================
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
