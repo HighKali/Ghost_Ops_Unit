@@ -4,6 +4,10 @@ set -e
 BASE_DIR="$(cd "$(dirname "$0")" && pwd)"
 
 case "$1" in
+  bridge)
+    bash "$BASE_DIR/engine/sync_bridge.sh"
+    ;;
+
   node)
     bash "$BASE_DIR/node/run_local_node.sh"
     ;;
