@@ -1,4 +1,11 @@
 #!/usr/bin/env bash
+set -e
+
+BASE_DIR="$(cd "$(dirname "$0")" && pwd)"
+TARGET="$BASE_DIR/ghost_ops_unit.sh"
+
+cat > "$TARGET" << 'EOF'
+#!/usr/bin/env bash
 
 # ============================================================
 #   GHOST OPS UNIT — VERSIONE ULTRA FULL COLOR (C1)
@@ -370,3 +377,8 @@ case "$cmd" in
 esac
 
 echo -e "${MAGENTA}✦ Ghost Ops Unit ULTRA — Operazione completata ✦${RESET}"
+EOF
+
+chmod +x "$TARGET"
+
+echo "Generato: $TARGET"
