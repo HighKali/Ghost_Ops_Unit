@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
 set -e
-
 BASE_DIR="$(pwd)"
 SURV_DIR="$BASE_DIR/var/survival"
-
 mkdir -p "$SURV_DIR"
 
 while true; do
@@ -21,47 +19,23 @@ while true; do
   read -rp "Scelta: " CHOICE
 
   case "$CHOICE" in
-    1)
-      bash "$BASE_DIR/ghost_msg_send.sh"
-      read -rp "Premi invio per continuare…" ;;
-    2)
-      bash "$BASE_DIR/ghost_msg_recv.sh"
-      read -rp "Premi invio per continuare…" ;;
+    1) bash "$BASE_DIR/ghost_msg_send.sh"; read -rp "Premi invio…" ;;
+    2) bash "$BASE_DIR/ghost_msg_recv.sh"; read -rp "Premi invio…" ;;
     3)
-      read -rp "Porta seriale (es. /dev/ttyS0): " PORT
-      read -rp "Baud (es. 9600): " BAUD
+      read -rp "Porta seriale: " PORT
+      read -rp "Baud: " BAUD
       bash "$BASE_DIR/ghost_cb_terminal.sh" "$PORT" "$BAUD"
-      read -rp "Premi invio per continuare…" ;;
+      read -rp "Premi invio…" ;;
     4)
-      echo "---- STATO SISTEMA ----"
+      echo "---- STATO ----"
       date
-      echo "Directory: $BASE_DIR"
-      echo "Survival dir: $SURV_DIR"
-      echo "Log comunicazioni:"
       tail -n 10 "$SURV_DIR/comms.log" 2>/dev/null || echo "Nessun log."
-      echo "------------------------"
-      read -rp "Premi invio per continuare…" ;;
+      read -rp "Premi invio…" ;;
     5)
-      echo "---- RITUALI ESSENZIALI ----"
-      if [ -x "$BASE_DIR/rituals/init_ritual.sh" ]; then
-        echo "Eseguo init_ritual.sh…"
-        bash "$BASE_DIR/rituals/init_ritual.sh" || true
-      fi
-      if [ -x "$BASE_DIR/rituals/closure_ritual.sh" ]; then
-        echo "Eseguo closure_ritual.sh…"
-        bash "$BASE_DIR/rituals/closure_ritual.sh" || true
-      fi
-      if [ -x "$BASE_DIR/rituals/purge_ritual.sh" ]; then
-        echo "Eseguo purge_ritual.sh…"
-        bash "$BASE_DIR/rituals/purge_ritual.sh" || true
-      fi
-      echo "-----------------------------"
-      read -rp "Premi invio per continuare…" ;;
-    6)
-      echo "Uscita dalla Survival Console."
-      exit 0 ;;
-    *)
-      echo "Scelta non valida."
-      sleep 1 ;;
+      bash "$BASE_DIR/rituals/init_ritual.sh" 2>/dev/null || true
+      bash "$BASE_DIR/rituals/closure_ritual.sh" 2>/dev/null || true
+      bash "$BASE_DIR/rituals/purge_ritual.sh" 2>/dev/null || true
+      read -rp "Premi invio…" ;;
+    6) exit 0 ;;
   esac
 done
